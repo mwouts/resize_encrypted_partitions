@@ -56,6 +56,8 @@ This takes a while, as the data is copied:
 
 ![](screenshots/moving_luks_partition.png)
 
+Now we just need to resize the LUKS partition to the right. This is done easily with the same Move/Resize tool (sorry I don't have a screenshot for that step).
+
 Finally, we open the LUKS partition with the command
 ``` 
 sudo cryptsetup luksOpen /dev/nvme0n1p6 luks_volume
